@@ -4,13 +4,13 @@ Project template to quickly get started with a new AWS Lambda project 🚀
 
 ## Tech Stack
 
-- [TypeScript]()
-- [Jest]()
-- [Yarn]()
-- [CI/CD with GitHub Actions]()
-- [Git hooks with Husky]()
-- [Prettier]()
-- [Dotenv]()
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable)
+- [CI/CD with GitHub Actions](https://github.com/features/actions)
+- [Git hooks with Husky](https://typicode.github.io/husky/#/)
+- [Prettier](https://prettier.io/)
+- [Dotenv](https://github.com/motdotla/dotenv)
 
 ## Getting Started
 
