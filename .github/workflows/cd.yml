@@ -36,5 +36,5 @@ jobs:
           aws_region: ${{ secrets.AWS_REGION }}
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          function_name: LAMBDA_FUNCTION_NAME  # TODO: update LAMBDA_FUNCTION_NAME
+          function_name: LAMBDA_FUNCTION_NAME # TODO: update LAMBDA_FUNCTION_NAME
           zip_file: compiled/lambda.zip
