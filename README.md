@@ -17,10 +17,13 @@ Project template to quickly get started with a new AWS Lambda project 🚀
 This template comes with many useful technologies already pre-configured ⚙️
 In same cases there is still minimal configuration required to make it work for you.
 
-### 1. Install Dependencies
+### 1. Remove `.git`
+
+To have a clean Git history it's recommended to delete `.git/` folder and re-init Git:
 
 ```sh
-yarn install
+rm -rf .git
+git init
 ```
 
 ### 2. Update `package.json`
