@@ -1,3 +1,4 @@
+import "dotenv/config";
 import {
   APIGatewayProxyEventV2 as ApiGatewayEvent,
   APIGatewayProxyStructuredResultV2 as ApiGatewayResponse,

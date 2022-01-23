@@ -4,8 +4,8 @@
   "description": "A template for lambda functions with useful presets",
   "main": "index.ts",
   "author": "Robert Fuchs <robertfuchs97@gmail.com>",
-  "license": "MIT",
   "repository": "https://github.com/Treborium/lambda-calculator",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "compile": "tsc",
@@ -21,6 +21,7 @@
     "jest": "^27.4.7",
     "ts-jest": "^27.1.2",
     "type-fest": "^2.9.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "dotenv": "^14.2.0"
   }
 }
