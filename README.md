@@ -39,6 +39,22 @@ yarn init
 There are some places where you need to reference your own Lambda function.
 Simply search the whole project for `LAMBDA_FUNCTION_NAME` and replace all occurrences with the name of your Lambda function.
 
+### 4. Setup Continous Delivery
+
+In order for CD to work you not only need to update `LAMBDA_FUNCTION_NAME` in `.github/workflows/cd.yml` but you also need to set some environment variables in your GitHub repository.
+
+The following environment variables are required (see [link](https://github.com/appleboy/lambda-action) for more information):
+
+- `AWS_REGION`
+- `AWS_ACCESS_KEY_ID`
+- `AWS_ACCESS_KEY_ID`
+
+## Install Dependencies
+
+```sh
+yarn install
+```
+
 ## Run Unit Tests
 
 ```sh
