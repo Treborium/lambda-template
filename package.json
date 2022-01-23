@@ -1,0 +1,26 @@
+{
+  "name": "lambda-template",
+  "version": "1.0.0",
+  "description": "A template for lambda functions with useful presets",
+  "main": "index.ts",
+  "author": "Robert Fuchs <robertfuchs97@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/Treborium/lambda-calculator",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc",
+    "build": "tsc -p tsconfig-build.json && yarn install --production --modules-folder compiled/node_modules",
+    "zip": "cd compiled && zip -q -r lambda.zip *.js* node_modules",
+    "upload": "aws lambda update-function-code --function-name LAMBDA_FUNCTION_NAME --zip-file fileb://compiled/lambda.zip",
+    "deploy": "yarn build && yarn zip && yarn upload"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.89",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.8",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.2",
+    "type-fest": "^2.9.0",
+    "typescript": "^4.5.4"
+  }
+}
